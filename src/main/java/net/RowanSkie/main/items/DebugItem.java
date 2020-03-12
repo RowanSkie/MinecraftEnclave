@@ -1,4 +1,4 @@
-package net.RowanSkie.main;
+package net.RowanSkie.main.items;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -19,7 +19,7 @@ public class DebugItem extends Item
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand)
     {
-        playerEntity.playSound(SoundEvents.BLOCK_WOOL_BREAK, 1.0F, 1.0F);
+        playerEntity.playSound(SoundEvents.BLOCK_CHEST_OPEN, 1.0F, 1.0F);
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
     }
 }
