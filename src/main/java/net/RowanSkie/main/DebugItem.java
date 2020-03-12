@@ -1,4 +1,4 @@
-package net.RowanSkie.example;
+package net.RowanSkie.main;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;

@@ -3,14 +3,14 @@
   "id": "modmain",
   "version": "${version}",
 
-  "name": "Unnamed RowanSkie's Mod",
-  "description": "Mod testing.",
+  "name": "MineClave: Fallout's Enclave",
+  "description": "Adds items and mods based on Fallout series' Enclave.",
   "authors": [
     "RowanSkie"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/RowanSkie/testmod"
+    "sources": "https://github.com/RowanSkie/MinecraftEnclave"
   },
 
   "license": "CC0-1.0",
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.RowanSkie.example.TestMod"
+      "net.RowanSkie.main.EnclaveMain"
     ]
   },
 
