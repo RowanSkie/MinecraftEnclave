@@ -9,9 +9,9 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class FabricItem extends Item
+public class DebugItem extends Item
 {
-    public FabricItem(Settings settings)
+    public DebugItem(Settings settings)
     {
         super(settings);
     }
