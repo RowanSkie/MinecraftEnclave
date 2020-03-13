@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.RowanSkie.main.EnclaveMain"
+      "net.mineclave.main.EnclaveMain"
     ]
   },
 

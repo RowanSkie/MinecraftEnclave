@@ -1,6 +1,7 @@
 {
     "item.mineclave.debugitem": "Test Item",
     "item.mineclave.wep_baton": "Security Baton",
+    "item.mineclave.steelingot": "Enclave Steel Ingot",
 
     "item.mineclave.wep_baton.tooltip":"A handy Vault-Tec Security Baton.",
     
