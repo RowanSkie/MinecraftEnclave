@@ -22,7 +22,7 @@ public class EnclaveMain implements ModInitializer {
 	);
 	
 	public static final ItemGroup ENCLAVEMATERIALS = FabricItemGroupBuilder.build (
-		new Identifier("mineclave", "general"),
+		new Identifier("mineclave", "materials"),
 		() -> new ItemStack(EnclaveMain.steel)
 	);
 

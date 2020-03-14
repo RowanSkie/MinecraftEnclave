@@ -3,13 +3,12 @@
   "id": "mineclave",
   "version": "${version}",
 
-  "name": "MineClave: Fallout's Enclave",
-  "description": "Adds items and mods based on Fallout series' Enclave.",
+  "name": "MineClave: Minecraft Fallout",
+  "description": "Adds items and mods based on Fallout series.",
   "authors": [
     "RowanSkie"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/RowanSkie/MinecraftEnclave"
   },
 
