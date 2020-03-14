@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "m",
+        "m",
+        "i"
+    ],
+    "key": {
+        "m": {
+            "item": "mineclave:steel_ingot"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "mineclave:wep_baton"
+    }
+}

@@ -1,10 +1,14 @@
 {
     "item.mineclave.debugitem": "Test Item",
     "item.mineclave.wep_baton": "Security Baton",
-    "item.mineclave.steelingot": "Enclave Steel Ingot",
+    "item.mineclave.steel_ingot": "Enclave Steel Ingot",
+
+    "block.mineclave.steel_block": "Enclave Steel Block",
 
     "item.mineclave.wep_baton.tooltip":"A handy Vault-Tec Security Baton.",
     
-    "itemGroup.mineclave.general": "Enclave Items",
-    "itemGroup.mineclave.weapons": "Enclave Weapons"
+    "itemGroup.mineclave.general": "MineClave Items",
+    "itemGroup.mineclave.materials": "MineClave Materials",
+    "itemGroup.mineclave.weapons": "MineClave Weapons",
+    "itemGroup.mineclave.blocks": "MineClave Blocks"
   }
