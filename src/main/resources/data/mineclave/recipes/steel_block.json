@@ -1,0 +1,17 @@
+{
+    "type":"minecraft:crafting_shaped",
+    "pattern": [
+        "SSS",
+        "SSS",
+        "SSS"
+    ],
+    "key":{
+        "S":{
+            "item": "mineclave:steel_ingot"
+        }
+    },
+    "result":{
+        "item": "mineclave:steel_block",
+        "count": 1
+    }
+}
