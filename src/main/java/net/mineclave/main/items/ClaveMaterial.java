@@ -14,7 +14,8 @@ public class ClaveMaterial implements ToolMaterial {
     private final Lazy<Ingredient> repairIngredient;
 
 
-    public ClaveMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantibility, Supplier<Ingredient> repairIngredient) {
+    public ClaveMaterial(final int miningLevel, final int itemDurability, final float miningSpeed,
+            final float attackDamage, final int enchantibility, final Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

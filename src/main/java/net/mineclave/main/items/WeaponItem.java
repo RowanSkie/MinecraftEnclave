@@ -17,7 +17,8 @@ public class WeaponItem extends SwordItem {
     private final float attackDamage;
     private final float attackSpeed;
 
-    public WeaponItem(ClaveMaterial material, int attackDamage, float attackSpeed, final Settings settings) {
+    public WeaponItem(final ClaveMaterial material, final int attackDamage, final float attackSpeed,
+            final Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
         this.attackSpeed = attackSpeed;
         this.attackDamage = (float) attackDamage + material.getAttackDamage();

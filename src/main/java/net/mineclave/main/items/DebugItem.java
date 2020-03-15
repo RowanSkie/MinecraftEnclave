@@ -11,13 +11,12 @@ import net.minecraft.world.World;
 
 public class DebugItem extends Item
 {
-    public DebugItem(Settings settings)
-    {
+    public DebugItem(final Settings settings) {
         super(settings);
     }
- 
+
     @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand)
+    public TypedActionResult<ItemStack> use(final World world, final PlayerEntity playerEntity, final Hand hand)
     {
         playerEntity.playSound(SoundEvents.BLOCK_CHEST_OPEN, 1.0F, 1.0F);
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
