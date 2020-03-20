@@ -41,9 +41,7 @@ public class EnclaveMain implements ModInitializer {
 	() -> new ItemStack(EnclaveMain.batonweap));
 
 	// ToolMaterial
-	private static final ClaveMaterial material = new ClaveMaterial(1, 0, 0.5F, 2.5F, 750, () -> {
-		return Ingredient.ofItems(EnclaveMain.steel);
-	});
+	private static final ClaveMaterial material = new ClaveMaterial(1, 0, 0.5F, 2.5F, 750, () -> {Ingredient.ofItems(EnclaveMain.steel)});
 
 	// Items
 	public static final DebugItem debug = new DebugItem(new Item.Settings().group(EnclaveMain.ENCLAVEITEMS));
