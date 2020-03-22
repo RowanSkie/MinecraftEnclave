@@ -1,4 +1,4 @@
-package net.mineclave.main.block;
+package net.mineclave.fabric.block;
 
 import net.minecraft.block.Block;
 

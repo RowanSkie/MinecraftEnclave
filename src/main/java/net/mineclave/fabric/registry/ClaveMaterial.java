@@ -1,4 +1,4 @@
-package net.mineclave.main.items;
+package net.mineclave.fabric.registry;
 
 import java.util.function.Supplier;
 import net.minecraft.item.ToolMaterial;
@@ -21,7 +21,7 @@ public class ClaveMaterial implements ToolMaterial {
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantibility;
-        this.repairIngredient = new Lazy<Ingredient>(repairIngredient);
+        this.repairIngredient = new Lazy<>(repairIngredient);
      }
 
      @Override
@@ -51,7 +51,7 @@ public class ClaveMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
      }
     
 }

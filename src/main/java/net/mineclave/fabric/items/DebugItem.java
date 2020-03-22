@@ -1,4 +1,4 @@
-package net.mineclave.main.items;
+package net.mineclave.fabric.items;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
