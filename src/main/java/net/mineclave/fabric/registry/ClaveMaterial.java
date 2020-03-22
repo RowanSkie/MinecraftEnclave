@@ -22,9 +22,9 @@ public class ClaveMaterial implements ToolMaterial {
         this.attackDamage = attackDamage;
         this.enchantability = enchantibility;
         this.repairIngredient = new Lazy<>(repairIngredient);
-     }
+    }
 
-     @Override
+    @Override
     public int getDurability() {
         return this.itemDurability;
     }
