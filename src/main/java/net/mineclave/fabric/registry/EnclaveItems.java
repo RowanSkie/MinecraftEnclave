@@ -5,7 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
 
 public class EnclaveItems {
-    public static Item STEEL_INGOT = register(new Item(new Item.Settings().group(EnclaveItemGroups.ENCLAVEITEMS)), "steel_ingot");
+    public static Item STEEL_INGOT = register(new Item(EnclaveItemGroups.ITEMGROUP_MATERIALS), "steel_ingot");
 
     public static void init() {
     }

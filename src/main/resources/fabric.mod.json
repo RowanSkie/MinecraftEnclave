@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.mineclave.main.EnclaveMain"
+      "net.mineclave.fabric.EnclaveMain"
     ]
   },
   "mixins": [

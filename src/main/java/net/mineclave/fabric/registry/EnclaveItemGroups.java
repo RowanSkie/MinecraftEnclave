@@ -1,19 +1,12 @@
 package net.mineclave.fabric.registry;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-
-import net.mineclave.fabric.EnclaveMain;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class EnclaveItemGroups{
-    public static final ItemGroup ENCLAVEITEMS = FabricItemGroupBuilder.build(
-            new Identifier("mineclave", "general"),
-            () -> new ItemStack(EnclaveItems.STEEL_INGOT));
-
     public static final ItemGroup ENCLAVEMATERIALS = FabricItemGroupBuilder.build(
             new Identifier("mineclave", "materials"),
             () -> new ItemStack(EnclaveItems.STEEL_INGOT));
@@ -26,8 +19,7 @@ public class EnclaveItemGroups{
             new Identifier("mineclave", "weapons"),
             () -> new ItemStack(EnclaveWeapons.BATON));
 
-    public static final Item.Settings ITEMGROUP_ITEMS = new Item.Settings().maxCount(1).group(ENCLAVEITEMS);
-    public static final Item.Settings ITEMGROUP_MATERIALS = new Item.Settings().maxCount(1).group(ENCLAVEMATERIALS);
-    public static final Item.Settings ITEMGROUP_BLOCKS = new Item.Settings().maxCount(1).group(ENCLAVEBLOCKS);
+    public static final Item.Settings ITEMGROUP_MATERIALS = new Item.Settings().group(ENCLAVEMATERIALS);
+    public static final Item.Settings ITEMGROUP_BLOCKS = new Item.Settings().group(ENCLAVEBLOCKS);
     public static final Item.Settings ITEMGROUP_WEAP = new Item.Settings().maxCount(1).group(ENCLAVEWEAP);
 }

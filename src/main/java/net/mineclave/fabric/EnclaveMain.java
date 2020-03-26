@@ -1,6 +1,7 @@
 package net.mineclave.fabric;
 
 import net.fabricmc.api.ModInitializer;
+import net.mineclave.fabric.registry.EnclaveInit;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -16,6 +17,7 @@ public class EnclaveMain implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		log(Level.INFO,"Mod initialized.");
+		EnclaveInit.init();
 	}
 
 	public static void log(Level level, String message){
