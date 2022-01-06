@@ -1,8 +1,9 @@
-package net.mineclave.main.items;
+package net.mineclave.fabric.items;
 
 import java.util.List;
 
 import com.google.common.collect.Multimap;
+import net.mineclave.fabric.registry.ClaveMaterial;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -17,7 +18,8 @@ public class WeaponItem extends SwordItem {
     private final float attackDamage;
     private final float attackSpeed;
 
-    public WeaponItem(ClaveMaterial material, int attackDamage, float attackSpeed, final Settings settings) {
+    public WeaponItem(final ClaveMaterial material, final int attackDamage, final float attackSpeed,
+                      final Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
         this.attackSpeed = attackSpeed;
         this.attackDamage = (float) attackDamage + material.getAttackDamage();
@@ -37,8 +39,8 @@ public class WeaponItem extends SwordItem {
     public Multimap<String, EntityAttributeModifier> getModifiers(final EquipmentSlot slot) {
         final Multimap<String, EntityAttributeModifier> multimap = super.getModifiers(slot);
         if (slot == EquipmentSlot.MAINHAND) {
-           multimap.put(EntityAttributes.ATTACK_DAMAGE.getId(), new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_UUID, "Weapon modifier", (double)this.attackDamage, EntityAttributeModifier.Operation.ADDITION));
-           multimap.put(EntityAttributes.ATTACK_SPEED.getId(), new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_UUID, "Weapon modifier", (double)this.attackSpeed, EntityAttributeModifier.Operation.ADDITION));
+           multimap.put(EntityAttributes.ATTACK_DAMAGE.getId(), new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_UUID, "Weapon modifier", this.attackDamage, EntityAttributeModifier.Operation.ADDITION));
+           multimap.put(EntityAttributes.ATTACK_SPEED.getId(), new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_UUID, "Weapon modifier", this.attackSpeed, EntityAttributeModifier.Operation.ADDITION));
         }
   
         return multimap;

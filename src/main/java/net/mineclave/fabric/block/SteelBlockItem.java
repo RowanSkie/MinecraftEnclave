@@ -1,12 +1,10 @@
-package net.mineclave.main.items;
+package net.mineclave.fabric.block;
 
 import net.minecraft.block.Block;
 
 public class SteelBlockItem extends Block
 {
-
-    public SteelBlockItem(Settings settings) {
+    public SteelBlockItem(final Settings settings) {
         super(settings);
     }
-
 }
